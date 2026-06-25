@@ -33,3 +33,16 @@ assets/             Resume PDF, favicon, texture asset
 - Main colours: purple, pink, rose, and dark plum.
 - Layout style: large editorial hero, sticky pill navigation, marquee/ticker, rounded cards, featured project cards, experience timeline, skill cards, and bold footer.
 - No build step needed; this is plain HTML/CSS/JS.
+
+
+## Updating photos
+
+Profile and project images live in `assets/images/`. To replace them, keep the same file names and upload new versions:
+
+- `profile.jpg`
+- `strive.jpg`
+- `ami.jpg`
+- `gridbug.jpg`
+- `storyweaver.jpg`
+
+If you use different file names, update the matching `src="assets/images/..."` paths in `index.html`.
