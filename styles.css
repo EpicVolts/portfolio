@@ -303,10 +303,10 @@ h3 {
 .hero-card {
   position: relative;
   min-height: 520px;
-  padding: 28px;
+  padding: 318px 28px 28px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   border: 1px solid var(--line);
   border-radius: var(--radius-xl);
   overflow: hidden;
@@ -377,8 +377,15 @@ h3 {
   font-weight: 900;
 }
 
+.hero-card .card-kicker {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 12px;
+}
+
 .hero-card h2 {
   position: relative;
+  z-index: 1;
   margin-bottom: 18px;
   font-size: clamp(1.8rem, 3vw, 3rem);
   line-height: 0.95;
@@ -386,6 +393,7 @@ h3 {
 
 .availability {
   position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -696,7 +704,13 @@ h3 {
   box-shadow: none;
 }
 
+.project-image--strive img {
+  object-fit: cover;
+  object-position: center;
+}
+
 .project-image--storyweaver img {
+  object-fit: cover;
   object-position: center 18%;
 }
 
@@ -876,7 +890,8 @@ h3 {
   }
 
   .hero-card {
-    min-height: 420px;
+    min-height: 540px;
+    padding-top: 302px;
   }
 
   .section-label {
